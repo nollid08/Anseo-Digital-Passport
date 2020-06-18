@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Log It | Anseo Digital Passport</title>
+	<meta charset="UTF-8">
+
+	<meta name="viewport"
+		content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0" />	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Default.css-->
+	<link rel="stylesheet" type="text/css" href="Styles/default.css" />
+	<!-- LogIt.css -->
+	<link rel="stylesheet" type="text/css" href="Styles/logIt.css" />
+	<!-- Navbar.js -->
+	<link rel="stylesheet" type="text/css" href="Styles/navbar.css" />
+	<link rel="shortcut icon" href="Images/Logo/Favicon/favicon.ico" />
+
+</head>
+
+<body>
+	<!-- Start of box-->
+	<div class="box">
+
+	<!-- Start of navbar and box header-->
+		<nav class="topnav rowx header" id="myTopnav">
+			<!-- Start of leftnav -->
+			<div class="leftNav">
+ 				<img id="logo" class="logo" src="Images/Logo/anseoDigitalPassportLogo.svg" alt="Logo">
+			 </div>
+			<!-- End of leftnav -->	 
+			<!-- Start of rightnav -->
+			<div class="rightNav">
+				<a href="logIt.html">Log A Point</a>
+				<a href="passport.html">Passport</a>
+				<a href="profile.html">Profile</a>
+				<a href="locations.html">All Locations</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="javascript:void(0);" id="icon" class="icon" onclick="openNav()">
+				<i class="fa fa-bars hamburger fa-4x" style = "font-size:7vh"></i>
+				</a>
+			</div>
+			<!-- End of rightnav -->
+		</nav>
+		<!-- End of navbar and box header-->
+		<!-- Start of sidebar -->
+		<div id="mySidenav" class="sidenav">
+			<!-- Start of right-aligned X container -->
+			<div class="mobileRightNav">
+				<a class="closebtn" onclick="closeNav()" href="javascript:void(0)">&times;</a>
+			</div>
+			<!-- End of right-aligned X container -->
+			<a href="logIt.html">Log A Point</a>
+			<a href="passport.html">Passport</a>
+			<a href="profile.html">Profile</a>
+			<a href="locations.html">All Locations</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<!-- End of sidebar -->
+
+	<!-- Start of box content-->
+		<div class="row no-gutters rowx content" style="padding: 2vw;">
+		<!-- Start of main content -->
+			<div class="mainContent">
+				<!-- Start of table container -->
+				<table class="Tablecontainer">
+					<!-- Start of table row for content-->
+					<tr>
+						<td style="vertical-align:top">
+							<h1 class="title">Closest Location</h1>
+							<h3 class="text" id="locationout">Closest Location: Loading</h3>
+							<h3 class="text" id="distanceout">Distance: Loading</h3>
+							<h3 class="text" id="countyout">County: Loading</h3>
+						</td>
+					</tr>
+					<!-- End of table row for content-->
+					<!-- Start of table row for button-->
+					<tr>
+						<td style="vertical-align:bottom">
+							<button type="button" class="btnStandard logBtn" id="logBtn" name="logBtn">
+								<p class="logBtnText">Log It!!!!
+							</button>
+							
+						</td>
+					</tr>
+					<!-- End of table row for button -->
+				</table>
+				<!-- End of table container -->
+			</div>
+			<!-- End of main content -->
+		</div>
+		<!-- End of box content-->
+
+
+
+
+	</div>
+	<!-- End of box-->
+
+
+	<!-- Core firebase SDK -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+	<!-- Firebase Auth SDK -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<!-- Sweet Alert -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	<!-- Navbar.js -->
+	<script src="Scripts/navbar.js"></script>
+	<!-- Logit.js -->
+	<script src="Scripts/logIt.js"></script>
+</body>
+
+</html>

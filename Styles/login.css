@@ -1,0 +1,55 @@
+body{
+    background-color: #83B799;
+    height:100%;    
+    overflow: hidden;
+}
+
+.leftside,
+.rightside {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    height:100vh;
+    text-align: center;
+}
+
+.mainImg {
+    height:70vh;
+    border: 1vw solid #DAB765;
+    border-image: url(../Images/Login/paper.jpg) 30 round;
+    transform: rotate(340deg);
+}
+
+.title {
+    font-size: 8vw;
+}
+
+/* Change the firebase login terms of service text to white*/
+.firebaseui-tos {
+    color: #ffffff;
+}
+
+/* Start of media query */
+@media screen and (max-width:768px) {
+    .leftside{
+        height: 65vh;
+    }
+
+    .rightside {
+        justify-content: flex-start;
+    }
+
+    .mainImg {
+        height: 48vh;
+        border-width: 3vw;
+        border-image: url(/Images/Login/paper.jpg) 30 round;
+        transform: rotate(340deg);
+    }
+
+    .title {
+        display: none;
+    }
+}
+/* End of media query */

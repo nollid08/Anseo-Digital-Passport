@@ -1,0 +1,189 @@
+body {
+    background-color: #40B8EC;
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+/*
+Start of box styling.
+The box styling is used to give the nav a fixed height 
+and the content to fill up all the space that is left
+*/
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+
+.box .rowx.header {
+    flex: 0 0 auto;
+    /* The above is shorthand for:
+flex-grow: 1,
+flex-shrink: 1,
+flex-basis: auto
+*/
+}
+
+.box .rowx.content {
+    flex: 1 1 auto;
+    text-align: center;
+
+}
+
+/* End of box styling */
+
+/* Start of left and right side styling */
+.leftside,
+.rightside {
+    width: 100%;
+    /* overflow: hidden; */
+    height: 100%;
+}
+
+.leftside {
+    display: flex;
+    justify-content: center
+}
+
+.rightside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* End of left and right side styling */
+
+/* Start of form styling */
+.formContainer {
+    background-color: white;
+    border-radius: 25px 25px 0px 0px;
+    width: 30vw;
+    position: fixed;
+    height: 85vh;
+    bottom: 0;
+}
+
+form {
+    text-align: left;
+    display: block;
+}
+
+.title {
+    font-size: 10vh;
+    margin: 0;
+}
+
+/* Start of input styling */
+label,
+input,
+textarea {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 3vh;
+}
+
+input,
+textarea {
+    color: black;
+    resize: none;
+    border: none;
+    outline: none !important;
+    background-color: #C4C4C4;
+    width: 90%;
+    transition: 0.1s ease;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #C4C4C4 inset !important;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #525252;
+    opacity: 1;
+    /* Firefox */
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #627174;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #627174;
+}
+
+/* End of input styling */
+
+.error {
+    color: red;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+    margin-left: 5%;
+    font-size: 2vh;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* End of form styling */
+
+
+
+.mainImg {
+    border: 3px solid grey;
+    width:100%;
+    max-width:40vw;
+    max-height:90vh;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Start of media query */
+@media screen and (max-width:768px) {
+
+    .col-md-6.rightside {
+        display: none;
+    }
+
+    .leftside {
+        width: 100vw;
+    }
+
+    .formContainer {
+        width: 90%;
+        height: 80vh;
+        left: 5%;
+    }
+
+    .title {
+        font-size: min(10vh, 20vw);
+    }
+}
+/* End of media query */

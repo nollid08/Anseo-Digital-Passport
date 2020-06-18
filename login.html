@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Anseo Digital Passport | Login</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- Start of favicon setup -->
+	<link rel="shortcut icon" href="Images/Logo/Favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="Images/Logo/Favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="Images/Logo/Favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="Images/Logo/Favicon/favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="Images/Logo/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<!-- End of favicon setup -->
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Firebase UI CSS -->
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+	<!-- Default.css -->
+	<link type="text/css" rel="stylesheet" href="Styles/default.css" />
+	<!-- Login.css -->
+	<link type="text/css" rel="stylesheet" href="Styles/login.css" />
+</head>
+
+<body>
+	<!-- Start of row -->
+	<div class="row no-gutters">
+		<!-- Start of leftside container section -->
+		<div class="col-md-6 no-gutters">
+			<!-- Start of leftside section -->
+			<div class="leftside">
+				<div class="retro">
+					<img class="mainImg" src="Images/Login/mainImg.jpg">
+				</div>
+			</div>
+			<!-- End of leftside section -->
+		</div>
+		<!-- End of leftside container section -->
+
+		<!-- Start of rightside container section -->
+		<div class="col-md-6 no-gutters">
+			<!-- Start of rightside section -->
+			<div class="rightside">
+				<h1 id="title" class="title">Anseo Digital Passport</h1>
+				<div id="firebaseui-auth-container"></div>
+			</div>
+			<!-- End of rightside section -->
+		</div>
+		<!-- End of rightside container section -->
+	</div>
+	<!-- End of row -->
+
+	<!-- Core firebase SDK -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+	<!-- Firebase Auth SDK -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+	<!-- Firebase UI JS-->
+	<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+	<!-- Login.js -->
+	<script src="Scripts/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+body {
+    background-color: #40B8EC;
+}
+
+/*
+    Start of box styling.
+    The box styling is used to give the nav a fixed height 
+    and the content to fill up all the space that is left
+*/
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+
+.box .rowx.header {
+    flex: 0 0 auto;
+    /* The above is shorthand for:
+    flex-grow: 1,
+    flex-shrink: 1,
+    flex-basis: auto
+    */
+}
+
+.box .rowx.content {
+    flex: 1 1 auto;
+    text-align: center;
+
+}
+/* End of box styling */
+
+/* Start of main content styling */
+.title{
+    font-size: 4vw;
+}
+
+.mainContent {
+    background-color: white;
+    width: 27vw;
+    height: 95%;
+    border-radius: 20px;
+    height: 90%;
+    text-align: center;
+    margin:auto;
+
+    
+}
+
+.text {
+    font-family: 'Roboto';
+    font-size: 2vw;
+}
+
+.Tablecontainer{
+    height: 100%;
+    border-collapse: collapse;
+}
+
+/* Start of btn styling */
+.logBtn {
+
+    border: 3px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    background-color: rgb(214, 18, 18);
+    border-radius: 10px;
+    align-self: auto;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2vh;
+}
+
+
+.logBtnText {
+
+    margin: 0.1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+
+    color: rgb(0, 0, 0);
+}
+
+.btnStandard:hover {
+    -webkit-box-shadow: 0px 6px 0px #000000;
+    -moz-box-shadow: 0px 6px 0px #000000;
+    box-shadow: 0px 9px 0px #000000;
+}
+
+.btnStandard:hover.btnStandard:active {
+    -webkit-box-shadow: 0px 3px 0px #000000;
+    -moz-box-shadow: 0px 3px 0px #000000;
+    box-shadow: 0px 3px 0px #000000;
+}
+
+.btnStandard:focus {
+    outline: thin dotted;
+}
+/* End of btn styling */
+
+/* End of main content styling */
+
+/* Start of mobile styling */
+@media screen and (max-width:992px) {
+    .mainContent{
+        height:95%;
+        width:90vw;
+    }
+
+    .title{
+        font-size: 15vw;
+    }
+
+    .text{
+        font-size: 7vw;
+    }
+
+    .logBtnText{
+        font-size: 17vw;
+
+    }
+
+    .logBtn{
+        border-width: 6px;
+        vertical-align: botttom;
+    }
+
+    .hamburger{
+        font-size: 100%;
+    }
+
+
+}
+/* End of mobile styling */

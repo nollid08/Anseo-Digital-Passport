@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "simplebar": "^5.1.0",
+    "simplelightbox": "^2.1.2"
+  }
+}

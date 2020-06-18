@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<noscript>
+	<style>
+		/**
+		* Reinstate scrolling for non-JS clients
+		*/
+		.simplebar-content-wrapper {
+			overflow: auto;
+		}
+	</style>
+	</noscript>
+
+	<title>Locations | Anseo Digital Passport</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, height=device-height, initial-scale=1,user-scalable=yes" />
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Simplebar CSS -->
+	<link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+	<!-- Default.css -->
+	<link rel="stylesheet" type="text/css" href="Styles/default.css" />
+	<!-- Navbar.css -->
+	<link rel="stylesheet" type="text/css" href="Styles/navbar.css" />
+	<!-- Locations.css -->
+	<link rel="stylesheet" type="text/css" href="Styles/locations.css" />
+	
+	<link rel="shortcut icon" href="Images/Logo/Favicon/favicon.ico" />
+</head>
+
+<body>
+	<!-- Start of box-->
+	<div class="box">
+		<!-- Start of navbar and box header-->
+		<nav class="topnav rowx header" id="myTopnav">
+			<!-- Start of leftnav -->
+			<div class="leftNav">
+				<img id="logo" class="logo" src="Images/Logo/anseoDigitalPassportLogo.svg" alt="Logo">
+			</div>
+			<!-- End of leftnav -->
+
+			<!-- Start of rightnav -->
+			<div class="rightNav">
+				<a href="logIt.html">Log A Point</a>
+				<a href="passport.html">Passport</a>
+				<a href="profile.html">Profile</a>
+				<a href="locations.html">All Locations</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="javascript:void(0);" id="icon" class="icon" onclick="openNav()">
+					<i class="fa fa-bars hamburger fa-4x" style="font-size:7vh"></i>
+				</a>
+			</div>
+			<!-- End of rightnav -->
+		</nav>
+		<!-- End of navbar and box header-->
+
+		<!-- Start of sidenav -->
+		<div id="mySidenav" class="sidenav">
+			<!-- Start of right-aligned X container -->
+			<div class="mobileRightNav">
+				<a class="closebtn" onclick="closeNav()" href="javascript:void(0)">&times;</a>
+			</div>
+			<!-- End of right-aligned X container -->
+			<a href="logIt.html">Log A Point</a>
+			<a href="passport.html">Passport</a>
+			<a href="profile.html">Profile</a>
+			<a href="locations.html">All Locations</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<!-- End of sidenav -->
+
+		<!-- Start of row and box content-->
+		<div class="row no-gutters rowx content" >
+			<!-- Start of leftside container section -->
+			<div class="col-md-7 no-gutters " id="aside">
+				<!-- Start of leftside section -->
+				<div class="leftside ">
+					<img src="Images/AllLocations/explore.png" alt="" class ="mainImg">
+				</div>
+				<!-- End of leftside section -->
+			</div>
+			<!-- End of leftside container section -->
+
+			<!-- Start of rightside container section -->
+			<div class="col-md-5 no-gutters ">
+				<!-- Start of rightside section -->
+				<div class="rightside">
+					<!-- Start of parent div -->
+					<div class="Parent"   data-simplebar data-simplebar-auto-hide="false">
+						<!-- Start of write div -->
+						<div>
+							<!-- Start of table -->
+							<table id="locations" >
+								<!-- Start of table head -->
+								<thead>
+									<tr>
+										<th>Locations</th>
+										<th>Distance</th>
+									</tr>
+								</thead>
+								<!-- End of table head -->
+
+								<!-- Start of table body -->
+								<tbody id="rows" >
+									<td>Loading...</td>
+								</tbody>
+								<!-- End of table body -->
+							</table>
+							<!-- End of table -->
+						</div>
+						<!-- End of write div -->
+					</div>
+					<!-- End of parent div -->
+				</div>
+				<!-- End of rightside section -->
+			</div>
+			<!-- End of rightside container section -->
+		</div>
+		<!-- End of row -->
+
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Font Awesome -->
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Simplebar JS -->
+		<script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+		<!-- Navbar.js -->
+		<script src="Scripts/navbar.js"></script>
+		<!-- Locations.js -->
+		<script src="Scripts/locations.js"></script>
+</body>
+
+</html>

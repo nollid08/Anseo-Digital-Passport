@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Profile | Anseo Digital Passport</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="
+        https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 	<!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- default.css -->
+	<link rel="stylesheet" type="text/css" href="Styles/default.css" />
+    <!-- Navbar.css -->
+    <link rel="stylesheet" type="text/css" href="Styles/navbar.css" />
+	<!-- Profile.css -->
+	<link rel="stylesheet" href="Styles/profile.css">
+
+	<link rel="shortcut icon" href="Images/Logo/Favicon/favicon.ico" />
+</head>
+
+<body>
+
+	<!-- Start of box-->
+	<div class="box">
+
+		<!-- Start of navbar and box header-->
+		<nav class="topnav rowx header" id="myTopnav">
+			<!-- Start of leftnav -->
+			<div class="leftNav">
+				<img id="logo" class="logo" src="Images/Logo/anseoDigitalPassportLogo.svg" alt="Logo">
+			</div>
+			<!-- End of leftnav -->
+			<!-- Start of rightnav -->
+			<div class="rightNav">
+				<a href="logIt.html">Log A Point</a>
+				<a href="passport.html">Passport</a>
+				<a href="profile.html">Profile</a>
+				<a href="locations.html">All Locations</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="javascript:void(0);" id="icon" class="icon" onclick="openNav()">
+					<i class="fa fa-bars hamburger fa-4x" style="font-size:7vh"></i>
+				</a>
+			</div>
+			<!-- End of rightnav -->
+		</nav>
+		<!-- End of navbar and box header-->
+
+		<!-- Start of sidenav -->
+		<div id="mySidenav" class="sidenav">
+			<!-- Start of right-aligned X container -->
+			<div class="mobileRightNav">
+				<a class="closebtn" onclick="closeNav()" href="javascript:void(0)">&times;</a>
+			</div>
+			<!-- End of right-aligned X container -->
+			<a href="logIt.html">Log A Point</a>
+			<a href="passport.html">Passport</a>
+			<a href="profile.html">Profile</a>
+			<a href="locations.html">All Locations</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<!-- End of sidebar -->
+
+		<!-- Start of row and box content-->
+		<div class="row no-gutters rowx content">
+			<!-- Start of leftside container section -->
+			<div class="col-md-6 no-gutters ">
+				<!-- Start of leftside section -->
+				<div class="leftside">
+					<img id="profilePic" src="Images/Profile/profile.png" alt="Profile Image" class="profilePic">
+				</div>
+				<!-- End of leftside section -->
+			</div>
+			<!-- End of leftside container section -->
+
+			<!-- Start of rightside container section -->
+			<div class="col-md-6 no-gutters">
+				<!-- Start of rightside section -->
+				<div class="rightside ">
+					<!-- Start of text container section -->
+					<div class="textContainer">
+						<h1 class="titleClean" id="name">Name: Loading</h1>
+						<h1 class="titleClean" id="email">Email: Loading</h1>
+						<h1 class="titleClean" id="logs">Logs: Loading</h1>
+					</div>
+					<!-- End of text container section -->
+
+					<!-- Start of btn container section -->
+					<div class="btnContainer">
+						<btn class="btnStandard" id="allLogsBtn">
+							<p class="btnText">View Logs</p>
+						</btn>
+						<btn class="btnStandard warning" id="logOutBtn">
+							<p class="btnText">Log Out</p>
+						</btn>
+					</div>
+					<!-- End of btn container section -->
+				</div>
+				<!-- End of rightside section -->
+			</div>
+			<!-- End of rightside container section -->
+		</div>
+		<!-- End of row and box content-->
+
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Core firebase SDK -->
+		<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+		<!-- Firebase Auth SDK -->
+		<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+		<!-- Fitty -->
+		<script src="Libraries/fitty/fittyCustom/fitty.min.js"></script>
+		<!-- Navbar JS -->
+		<script src="Scripts/navbar.js"></script>
+		<!-- Profile JS -->
+		<script src="Scripts/profile.js"></script>
+</body>
+
+</html>

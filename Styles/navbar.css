@@ -1,0 +1,153 @@
+/* Start of topnav styling */
+.topnav {
+    height: 10vh;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.rightNav {
+    float: right;
+}
+
+.mobileRightNav {
+    text-align: right;
+}
+
+.leftNav {
+    float: left;
+}
+/* Start of topnav link styling */
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    display: block;
+    color: #364548;
+    text-align: center;
+    padding-right: 25px;
+    text-decoration: none;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+/* End of topnav link styling */
+
+/* Start of topnav media queries */
+@media screen and (min-width:768px) {
+
+    .logo {
+        width: 10vw;
+        height: auto;
+        margin-left: 0.5vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .logo {
+        height: 7vh;
+        padding-left: 1vw;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+
+    .topnav{
+        padding-right: 0%;
+    }
+    .topnav a:hover {
+        color: unset;
+        transition: 0.0s;
+    }
+
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 992px) {
+    .topnav{
+        z-index: 9999;
+    }
+    .topnav a:not(:last-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        font-size:min(2vh, 3.3vw);
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav 
+with JavaScript when the user clicks on the icon. */
+@media screen and (max-width: 992px) {
+    .topnav.responsive {
+        height: auto;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+/* End of topnav media queries */
+/* End of topnav styling */
+
+/* Start of sidenav styling (for mobile)*/
+.sidenav {
+    text-align: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #2d2d4b;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.closebtn {
+    font-size: 10vh;
+    padding: 0px 2vw 0px 0px;
+    color: #FFFFFF;
+}
+
+.sidenav a:not(.closebtn) {
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+/* End of sidenav styling */

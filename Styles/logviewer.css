@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
+body {
+    background-color: #40B8EC;
+}
+
+/*
+    Start of box styling.
+    The box styling is used to give the nav a fixed height 
+    and the content to fill up all the space that is left
+*/
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.box .rowx.header {
+    flex: 0 0 auto;
+    /* The above is shorthand for:
+    flex-grow: 1,
+    flex-shrink: 1,
+    flex-basis: auto
+    */
+}
+
+.box .rowx.content {
+    flex: 1 1 auto;
+    text-align: center;
+
+}
+
+/* End of box styling */
+
+/* Start of left and right side styling */
+.leftside,
+.rightside {
+    width: 50vw;
+    /* overflow: hidden; */
+    height: 100%;
+}
+
+.leftside {
+    text-align: center;
+}
+
+.rightside {
+    text-align: center;
+    overflow: hidden;
+
+}
+/* End of left and right side styling */
+
+/* Start of button text styling */
+.btnText {
+    margin: 0.1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    ;
+    font-size: 3vw;
+    color: rgb(0, 0, 0);
+}
+/* End of button text styling */
+
+/* Start of polaroid image styling */
+.polaroid {
+    position: relative;
+    width: 220px;
+    text-align: center;
+    width: 100%;
+}
+
+.polaroid img {
+    border: 10px solid #fff;
+    border-bottom: 45px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    -moz-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;
+    object-fit: cover;
+    max-height: 50vh;
+    max-width: 50vw;
+}
+
+.polaroid p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.2vw;
+    color: #888;
+}
+
+/* End of polaroid image styling */
+
+/* Start of file button styling.
+ The file button must be hidden as it is incredibly hard to style so we use
+ a label as the button instead. Cannot hide using "display: none;" for 
+ accesibility*/
+.inputBtn {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+/* End of file button styling. */
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10vh;
+}
+
+.commentInput {
+    display: block;
+    width: 90%;
+    max-width: 90%;
+    height: 50vh;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+    font-size: 2.1vw;
+}
+/* Start of media query */
+@media screen and (max-width:768px) {
+
+    .leftside,
+    .rightside {
+        width: 100%;
+        height:unset;
+        padding: 0px;
+        overflow: hidden;
+        text-align: center;
+        padding-bottom:1vh;
+    }
+
+    .btnStandard {
+        margin-top:1.5vh;
+        border-width: 0.4vw;
+        border-radius: 7px;
+    }
+
+    .btnText {
+        font-size: 6vw;
+    }
+
+    .title {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10vw;
+    }
+
+    .commentInput {
+        display: block;
+        width: 95vw;
+        max-width: 95vw;
+        height: 18vh;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 120px;
+        background-color: #f8f8f8;
+        font-size: 4vw;
+        resize: none;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .polaroid {
+        position: relative;
+        width: unset;
+        text-align: center;
+        width: 100%;
+    }
+
+    .polaroid img {
+        border: 9px solid #fff;
+        border-bottom: 22.5px solid #fff;
+        -webkit-box-shadow: 3px 3px 3px #777;
+        -moz-box-shadow: 3px 3px 3px #777;
+        box-shadow: 3px 3px 3px #777;
+        object-fit: cover;
+        max-height: 25vh;
+        max-width: 90vw;
+    }
+
+    .polaroid p {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 89%;
+        bottom: 0px;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 3.0vw;
+        color: #888;
+    }
+}
+
+/* End of media queries */

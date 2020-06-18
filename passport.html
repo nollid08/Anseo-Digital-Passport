@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Passport | Anseo Digital Passport</title>
+
+    <noscript>
+        <style>
+            /**
+            * Reinstate scrolling for non-JS clients
+            */
+            .simplebar-content-wrapper {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="
+        https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Simplebar CSS -->
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- default.css -->
+    <link rel="stylesheet" type="text/css" href="Styles/default.css" />
+    <!-- Navbar.css -->
+    <link rel="stylesheet" type="text/css" href="Styles/navbar.css" />
+    <!-- Passport.css -->
+    <link rel="stylesheet" type="text/css" href="Styles/passport.css" />
+
+    <link rel="shortcut icon" href="Images/Logo/Favicon/favicon.ico" />
+</head>
+
+<body>
+    <!-- Start of box-->
+    <div class="box">
+
+        <!-- Start of navbar and box header-->
+        <nav class="topnav rowx header" id="myTopnav">
+            <!-- Start of leftnav -->
+            <div class="leftNav">
+                <img id="logo" class="logo" src="Images/Logo/anseoDigitalPassportLogo.svg" alt="Logo">
+            </div>
+            <!-- End of leftnav -->
+
+            <!-- Start of rightnav -->
+            <div class="rightNav">
+                <a href="logIt.html">Log A Point</a>
+				<a href="passport.html">Passport</a>
+				<a href="profile.html">Profile</a>
+				<a href="locations.html">All Locations</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" id="icon" class="icon" onclick="openNav()">
+                    <i class="fa fa-bars hamburger fa-4x"></i>
+                </a>
+            </div>
+            <!-- End of rightnav -->
+        </nav>
+        <!-- End of navbar and box header-->
+
+        <!-- Start of sidenav -->
+        <div id="mySidenav" class="sidenav">
+            <!-- Start of right-aligned X container -->
+            <div class="mobileRightNav">
+                <a class="closebtn" onclick="closeNav()" href="javascript:void(0)">&times;</a>
+            </div>
+            <!-- End of right-aligned X container -->
+            <a href="logIt.html">Log A Point</a>
+            <a href="passport.html">Passport</a>
+            <a href="profile.html">Profile</a>
+            <a href="locations.html">All Locations</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <!-- End of sidenav -->
+        <!-- Start of row and box content-->
+        <div class="row no-gutters rowx content">
+            <!-- Start of leftside container section -->
+            <div class="col-md-4 no-gutters " id="aside">
+                <!-- Start of leftside section -->
+                <div class="leftside ">
+                    <img id="profilePic" class="profilePic" src="Images/profile.png" alt="Profile Picture Loading...">
+                    <h2 class="secondaryTitleClean" id="name">Loading...</h2>
+                    <h1 class="titleClean" id="logAmount">Loading...</h1>
+                    <h2 class="secondaryTitleClean" id="uniqueLogs">Loading</h2>
+                    <button class="btnStandard" onclick="window.location.href = 'profile.php';">
+                        <p class="btnText">Go To Profile</p>
+                    </button>
+                </div>
+                <!-- End of leftside section -->
+            </div>
+            <!-- End of leftside container section -->
+
+            <!-- Start of rightside container section -->
+            <div class="col-md-8 no-gutters ">
+                <!-- Start of rightside section -->
+                <div class="rightside">
+                    <div class="Parent" data-simplebar data-simplebar-auto-hide="false">
+                        <div id="write">
+                        </div>
+                    </div>
+                </div>
+                <!-- End of rightside section -->
+            </div>
+            <!-- End of rightside container section -->
+        </div>
+        <!-- End of row and box content-->
+    </div>
+    <!-- End of box content-->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <!-- Simplebar JS -->
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+    <!-- Navbar.js -->
+    <script src="Scripts/navbar.js"></script>
+    <!-- Passport.js -->
+    <script src="Scripts/passport.js"></script>
+</body>
+
+</html>

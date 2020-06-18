@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body {
+    background-color: #40B8EC;
+    overflow: hidden;
+}
+
+/*
+    Start of box styling.
+    The box styling is used to give the nav a fixed height 
+    and the content to fill up all the space that is left
+*/
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.box .rowx.header {
+    flex: 0 0 auto;
+}
+
+.box .rowx.content {
+    flex: 1 1 auto;
+    text-align: center;
+}
+/* End of box styling */
+
+/* Start of left and right side styling */
+.row {
+    width: 100%;
+    height: 100%;
+}
+
+.leftside,
+.rightside {
+    width: 100%;
+    height: 100%;
+}
+
+.rightside {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End of left and right side styling */
+
+/* Start of sidebar section */
+.profilePic {
+    margin-top: 4vh;
+    border-radius: 50%;
+    border: 3px solid grey;
+    height: 30vh;
+}
+
+.titleClean,
+.secondaryTitleClean {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+.titleClean {
+    font-size: 12vh;
+}
+
+.secondaryTitleClean {
+    font-size: 6.5vh;
+}
+
+.btnStandard {
+    margin-top: 3vh;
+    border: 3px solid #000000;
+}
+
+.btnStandard:hover {
+    -webkit-box-shadow: 0px 6px 0px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 6px 0px rgb(0, 0, 0);
+    box-shadow: 0px 9px 0px rgb(0, 0, 0);
+}
+
+.btnStandard:active {
+    -webkit-box-shadow: 0px 3px 0px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 3px 0px rgb(0, 0, 0);
+    box-shadow: 0px 3px 0px rgb(0, 0, 0);
+}
+
+.btnText {
+    color: #000000;
+    margin: 0.8vh 0.5vh 0.8vh .5vh;
+    font-size: 6vh;
+}
+/* End of sidebar section */
+
+/* Start of table section */
+.Parent {
+    max-height: 90%;
+    height: 80vh;
+    width: 66vw;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70vw;
+    background-color: white;
+    text-align: left;
+}
+
+th {
+    font-weight: 300;
+    font-size: 2vw;
+    width:1px;
+}
+
+td {
+    font-size: 1.5vw;
+}
+
+td,
+th {
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 3px;
+}
+
+tbody tr {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+}
+
+tbody tr:hover{
+    transition: 0.5s;
+    background-color: #dadada;
+}
+
+.simplebar-scrollbar {
+    margin-right: 2px;
+}
+/* End of table section */
+
+/* Start of media query */
+@media screen and (max-width: 992px) {
+    
+    #aside {
+        display: none;
+    }
+
+    .rightside {
+        max-height: 80vh;
+        width: 100vw;
+    }
+
+    .Parent {
+        height: 80vh;
+        width: 95vw;
+        border-radius: 20px;
+        background-color: white;
+    }
+
+    #write {
+        min-height: 80vh;
+        width: 95vw;
+    }
+
+    table{
+        display: block;
+        float:left;
+    }
+
+    th {
+        font-size: 6.5vw;
+    }
+    
+    tr td {
+        font-size: 6vw;
+    }
+
+    .Date{
+        padding-left:10%;
+    }
+
+    .Time,
+    .County,
+    .Comment {
+        display: none;
+    }
+}
+/* End of media query */

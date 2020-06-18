@@ -1,0 +1,85 @@
+body {
+    background-color: #40B8EC;
+}
+
+/*
+    Start of box styling.
+    The box styling is used to give the nav a fixed height 
+    and the content to fill up all the space that is left
+*/
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.box .rowx.header {
+    flex: 0 0 auto;
+}
+
+.box .rowx.content {
+    flex: 1 1 auto;
+    text-align: center;
+}
+/* End of box styling */
+
+/* Start of left and right side styling */
+.leftside,
+.rightside {
+    width: 100%;
+    height: 100%;
+}
+
+.leftside, .rightside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* End of left and right side styling */
+
+.mainImg {
+    border: 0.22vw solid grey;
+    border-radius: 50%;
+    height: min(85vh, 45vw);
+}
+
+.title {
+    font-size: 12vh;
+    margin: 1vh;
+    margin-bottom: 2vh;
+}
+
+.paragraph {
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Start of media query */
+@media screen and (max-width:748px) {
+    
+    .row{
+        display:block;
+    }
+
+    .col-md-6{
+    height:unset;
+    }
+
+    .mainImg {
+        border: 0.88vw solid grey;
+        height: 40vh;
+    }
+
+    .title {
+        font-size: 8vh;
+        margin: 0;
+    }
+
+    .paragraph {
+        max-width:95%;
+        font-size: max(max(2.4vh,3.7vw), 85%);
+    }
+}
+/* End of media query */
