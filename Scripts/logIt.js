@@ -100,7 +100,7 @@ jQuery.ajax({
 		let btn = document.getElementById("logBtn");
 		// This triggers when the log button is pressed 
 		btn.addEventListener('click', () => {
-			if (closestDistance <= 90) {
+			if (closestDistance <= 25) {
 				if (firebase.auth().currentUser !== null) {
 					// Get users data to insert into DB
 					let uid = firebase.auth().currentUser.uid;
@@ -151,10 +151,10 @@ jQuery.ajax({
 					});
 				}
 				// If they are too far away
-			} else if (closestDistance > 90) {
+			} else if (closestDistance > 25) {
 				//Fire a "Sweet Alert" to tell the user that the log was unsuccessful
 				Swal.fire({
-					type: 'success',
+					type: 'warning',
 					title: 'Uh Oh!',
 					text: 'You are too far away from "' +
 						discoveryPoints[closest][0] + '" to log it!',
