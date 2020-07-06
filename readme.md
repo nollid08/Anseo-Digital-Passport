@@ -1,5 +1,5 @@
 # Anseo Digital Passport
-Anseo Digital Passport is a digital logging service for the Wild Atlantic Way that aims to replace the physical passport that is currently available. 
+Anseo Digital Passport is a digital logging service for the Wild Atlantic Way that aims to be an alternitave to the physical passport that is currently available. 
 ![Image Of Wild Atlantic Way Passport](https://pbs.twimg.com/media/DoG3NV1W0AUWXho.jpg)
 The current phyical passport.
 
